@@ -1,0 +1,133 @@
+/*fuentes de texto*/
+
+/*pagina*/
+:root {
+    --width-lista-detalles: 325px;
+    --margin-top-detalles: 2.5px
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.img-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.42;
+    background-image: url('./img/fondo.png');
+    background-size: 100% 100%;
+    z-index: -1 !important;
+}
+
+header {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    position: relative;
+    width: calc(100% - 40px);
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+}
+
+.lista-detalles {
+    width: var(--width-lista-detalles);
+    background-color: #e8e8e8;
+}
+
+.lista-detalles ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: var(--width-lista-detalles);
+}
+
+.lista-detalles ul p {
+    margin: 0;
+    margin-top: var(--margin-top-detalles);
+}
+
+.lista-detalles b {
+    margin-right: 5px;
+}
+
+.lista-detalles #bt-mas-detalles,
+.lista-detalles #bt-esconder-detalles {
+    color: rgb(47, 100, 244);
+    cursor: pointer;
+    user-select: none;
+    margin: 0;
+    margin-top: calc(var(--margin-top-detalles) + 0.5px);
+}
+
+.lista-detalles #bt-mas-detalles:hover,
+.lista-detalles #bt-esconder-detalles:hover {
+    color: rgb(89, 77, 255);
+    text-decoration: underline;
+}
+
+.lista-detalles #bt-esconder-detalles {
+    display: none;
+}
+
+.lista-detalles #lista-mas-detalles {
+    width: 100%;
+    display: none;
+}
+
+.lista-detalles #lista-mas-detalles p {
+    margin: var(--margin-top-detalles);
+}
+
+.section-libro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-libro img {
+    width: 55%;
+    max-width: 450px;
+    min-width: 225px;
+    box-shadow: 0px 0px 3px #e8e8e8;
+}
+
+.opciones-compra {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.opciones-compra div {
+    width: 200px;
+    height: 55px;
+    background-color: aquamarine;
+    border-radius: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.opciones-compra #bt-donar {
+    margin-top: 15px;
+}
+
+.autores {
+    position: relative;
+    bottom: 0%;
+    margin-left: 20px;
+}
